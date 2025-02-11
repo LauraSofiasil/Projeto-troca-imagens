@@ -1,11 +1,12 @@
-:root{
-    --imagem-fundo: url('./img/divertidamente-2-espremidos.webp');
-}
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+:root{
+    --img1: url('./img/divertidamente-2-espremidos.webp');
+    --img2: url('./img/img2.webp')
 }
 
 body{
@@ -14,14 +15,14 @@ body{
     display: flex;
     justify-content: center; /* Centralizar no eixo x */
     align-items: center;    /* Centralizar no eixo y */
-    background-image: var(--imagem-fundo);
-    background-size: 100%;
+    background-image: var(--img1); /**/
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    transition: background-color 1s;
 }
 
 #trocar-imagem{
     padding: 8px 16px;
     font-size: 24px;
     cursor: pointer; /*Muda a cor na hora que clica no botão*/
+    
 }
